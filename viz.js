@@ -1,3 +1,5 @@
+d3 = require('d3')
+
 const getTakeOff = (uavI) => instances.map(inst => {
     return inst.signature('UAV').tuples()[uavI]._atoms[0].flying._id == 1
     }).indexOf(true)
